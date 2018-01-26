@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 class ItemService {
-  sendDAta(data) {
+  sendData(data) {
     axios.post('http://localhost:4200/items/add/post', {
       item: data
     })
