@@ -1,3 +1,4 @@
+
 M.E.R.N. (front end)
 ===================
 > Building a basic MERN stack application. Following [Krunal Lathiya's MERN Stack Tutorial](https://appdividend.com/2017/06/28/mern-stack-tutorial/?utm_source=hashnode.com).
@@ -27,5 +28,61 @@ React Router
 > In the example above, if the ```location.pathname``` were ```/one/two```, then this would result as **not a match**.
 >
 >
+
+**props.match.params**
+>
+> **React Router** provides some additional properties to access route params in a component.
+> Lets say your want to pull the name of the chosen id, you can retrieve this from the URL. To access it, you can use the prop ```match```.
+> The ```match``` prop has a ```params``` object that contains the all existing param values.
+>
+> Example:
+```
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
+const ParamsExample = () => (
+  <Router>
+    <div>
+      <h2>Accounts</h2>
+      <ul>
+        <li><Link to="/netflix">Netflix</Link></li>
+        <li><Link to="/zillow-group">Zillow Group</Link></li>
+        <li><Link to="/yahoo">Yahoo</Link></li>
+        <li><Link to="/modus-create">Modus Create</Link></li>
+      </ul>
+
+      <Route path="/:id" component={Child}/>
+    </div>
+  </Router>
+)
+
+const Child = ({ match }) => (
+  <div>
+    <h3>ID: {match.params.id}</h3>
+  </div>
+)
+
+export default ParamsExample
+```
+>
+> The ```match``` object actually contains a number of other route-related properties.
+>  
+```
+console.log(props.match)
+
+{
+  isExact: true,
+  params: {
+    name: 'the-topic-name'
+  },
+  path: '/topics/:name',
+  url: '/topics/the-topic-name'
+}
+```
+> For more information/examples with **Route Params**, here is a helpful link to Alex Sears lesson on [Using React Router 4](https://scotch.io/courses/using-react-router-4/route-params)
 
 ----------
