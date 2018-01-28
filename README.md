@@ -86,3 +86,11 @@ console.log(props.match)
 > For more information/examples with **Route Params**, here is a helpful link to Alex Sears lesson on [Using React Router 4](https://scotch.io/courses/using-react-router-4/route-params)
 
 ----------
+
+Heroku
+-------------
+>  
+> Using [mars Heroku Buildpack for create-react-app](https://github.com/mars/create-react-app-buildpack) for a fast and easy deploy.
+>
+
+----------

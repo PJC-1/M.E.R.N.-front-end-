@@ -14,7 +14,7 @@ class IndexItem extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4200/items')
+    axios.get('https://infinite-cliffs-28384.herokuapp.com/items')
       .then(response => {
         this.setState({ items: response.data });
       })

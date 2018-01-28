@@ -12,7 +12,7 @@ class EditItem extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4200/items/edit/'+this.props.match.params.id)
+    axios.get('https://infinite-cliffs-28384.herokuapp.com/items/edit/'+this.props.match.params.id)
       .then(response => {
         this.setState({ value: response.data });
       })
