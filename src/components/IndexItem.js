@@ -23,7 +23,7 @@ class IndexItem extends Component {
       });
   }
 
-  tableRow() {
+  tabRow() {
     if(this.state.items instanceof Array) {
       return this.state.items.map(function(object, i) {
         return <TableRow obj={object} key={i} />;
