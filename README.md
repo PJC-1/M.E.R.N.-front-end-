@@ -95,7 +95,7 @@ Heroku
 
 **Issue with React Router on Heroku**
 >
-> After successfully deploying to heroku with the mars heroku buildpack, the root URL was rendering, but other routers specified with *React Router* were not working.
+> After successfully deploying to heroku with the mars heroku buildpack, the root URL was rendering, but other routes specified with *React Router* were not working.
 >  
 >  Creating a ```static.json``` file in the same directory as the ```package.json``` with the following contents:
 >

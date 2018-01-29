@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ItemService from './ItemService';
 import axios from 'axios';
 import TableRow from './TableRow';
@@ -34,6 +35,7 @@ class IndexItem extends Component {
   render() {
     return (
       <div className="container">
+        <Link to="/add-item" className="pull-right">Create New Item</Link>
         <table className="table table-striped">
           <thead>
             <tr>
