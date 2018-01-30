@@ -26,7 +26,6 @@ class AddItem extends Component {
   render() {
     return (
       <div className="container">
-        <Link to="/index" className="pull-right">All Items</Link>
         <form onSubmit={this.handleSubmit}>
           <label>
             Add Item:

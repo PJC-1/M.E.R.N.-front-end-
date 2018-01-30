@@ -7,11 +7,12 @@ import App from './App';
 import AddItem from './components/AddItem';
 import IndexItem from './components/IndexItem';
 import EditItem from './components/EditItem';
-
+import NavBar from './components/NavBar';
 
 ReactDOM.render(
   <Router>
     <div>
+      <NavBar />
       <Route exact path='/' component={App} />
       <Route path='/add-item' component={AddItem} />
       <Route path='/index' component={IndexItem} />

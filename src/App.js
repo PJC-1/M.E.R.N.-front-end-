@@ -8,8 +8,6 @@ class App extends Component {
       <div className="App container">
         M.E.R.N. Stack Example
         <br/>
-        <Link to="/index" className="pull-right">All Items</Link>
-        <Link to="/add-item" className="pull-right">Create New Item</Link>
       </div>
     );
   }
