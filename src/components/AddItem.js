@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ItemService from './ItemService';
+import NavBar from './NavBar';
 
 class AddItem extends Component {
   constructor(props) {
@@ -23,8 +24,10 @@ class AddItem extends Component {
   }
 
   render() {
+    var currentPath = this.props.location.pathname;
     return (
       <div className="container">
+        <NavBar location={currentPath}/>
         <form onSubmit={this.handleSubmit}>
           <label>
             Add Item:
