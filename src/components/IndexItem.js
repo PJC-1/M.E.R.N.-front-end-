@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ItemService from './ItemService';
 import axios from 'axios';
 import TableRow from './TableRow';
+import NavBar from './NavBar';
 
 class IndexItem extends Component {
   constructor(props) {
@@ -32,8 +33,10 @@ class IndexItem extends Component {
   }
 
   render() {
+    var currentPath = this.props.location.pathname;
     return (
       <div className="container">
+        <NavBar location={currentPath}/>
         <table className="table table-striped">
           <thead>
             <tr>
